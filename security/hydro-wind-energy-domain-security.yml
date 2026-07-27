@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: hw.energy
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 14 07:14:35 2026 GMT
+  hsts: false
+domains:
+- domain: hw.energy
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

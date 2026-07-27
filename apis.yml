@@ -1,8 +1,25 @@
 aid: hydro-wind-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hydro-wind-energy.png
 name: Hydro Wind Energy
-description: Hydro Wind Energy is a company surfaced as a portfolio company of techstars and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Hydro Wind Energy develops offshore renewable energy infrastructure at the convergence of
+  dispatchable clean power, grid-scale energy storage, and freshwater production. Its OceanHydro Omni
+  deep-sea offshore wind platform converts wind into mechanical lift with built-in storage; SubSea RO
+  Wind couples wind energy directly to subsea reverse-osmosis desalination; and the Offshore AI Power
+  Plant integrates both with floating data centres for off-grid AI infrastructure. The company also
+  ships QuenchSea, a portable hand-powered desalination device deployed across 60+ countries. Backed by
+  Techstars, Republic, and Shell StartUp Engine. The company publishes no public developer API,
+  documentation, or SDK surface as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/hydro-wind-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Renewable Energy
+- Offshore Wind
+- Energy Storage
+- Desalination
+- Clean Technology
+- Climate Tech
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hydro-wind-energy-domain-security.yml
 - type: Website
   url: https://hw.energy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
